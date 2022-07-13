@@ -6,8 +6,11 @@
 
 }
 
-body{
-  position: relative;
+
+
+.layout{
+ position: absolute;
+ padding-top: 8rem;
 }
 
 /*============================================== 
@@ -18,7 +21,7 @@ Header
   justify-content: space-between;
  z-index: 999;
  background: rgb(177, 172, 172);
- box-shadow: 0 1px 4px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 1) inset;
+ 
   
   position: fixed;
   top: 0;
@@ -34,7 +37,7 @@ Header
 }
 
 .logo {
-  margin: 2rem;
+  margin: 1rem;
   font-size: 35px;
   color: blue;
 
@@ -90,13 +93,14 @@ Header
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 60%;
-    top: 105px;
+    top: 72px;
+    
     flex-direction: column;
     padding: min(20vh, 10rem) 4rem;
     
     background: rgb(177, 172, 172);
    
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 1), 0 0 40px rgba(0, 0, 0, 1) inset;
+    
     
 
     transform: translateX(100%);
@@ -148,7 +152,7 @@ Header
   display: flex;
   flex-direction: column;
   gap: 5rem;
-  margin-top: 10rem;
+  
 }
 
 .info {
@@ -232,6 +236,7 @@ Header
 ============================================== */
 
 .footer {
+  
   display: flex;
   text-align: center;
   justify-content: center;

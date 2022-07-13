@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 
@@ -43,10 +44,10 @@ const NavBar = () => {
             <nav >
                 <ul id="primary-navigation" className="primary-navigation flex " data-visible={datavisible}>
                     <li className="active">
-                      <a>Home</a>
+                    <Link href="/"><a>Home</a></Link>
                     </li>
                     <li>
-                      <a>Characters</a>
+                      <Link href="/charachters/"><a>Characters</a></Link>
                     </li>
                     <li>
                       <a>Episodes</a>
