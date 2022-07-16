@@ -49,11 +49,9 @@ const NavBar = () => {
                     <li>
                       <Link href="/charachters/"><a>Characters</a></Link>
                     </li>
+                   
                     <li>
-                      <Link href="/episodes"><a>Episodes</a></Link>
-                    </li>
-                    <li>
-                      <a>Quotes</a>
+                    <Link href="/quotes"><a>Quotes</a></Link>
                     </li>
                 </ul>
 

@@ -6,6 +6,7 @@ import Styles from '../../styles/pagination.module.css'
 
 
 function Charachters( {data}) {
+  console.log(data[0])
   const [currentpage,setcurrentpage]=useState(1);
    
    const itemPerPAge=5;

@@ -1,0 +1,12 @@
+
+    .wrapper{
+        display: flex;
+    }
+.button{
+    margin: auto;
+    padding: 1rem 2rem;
+    box-shadow: 1px 4px 4px;
+    border-radius: 15%;
+    
+}
+
