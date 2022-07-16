@@ -29,7 +29,7 @@ export default function Home() {
                </div>
                <div className='info '>   
                 <div className="info--text">
-                    <p className="summary--p">A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.
+                    <p className="summary--p" >A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family s future.
                     </p>
                 </div>
                 <Image
