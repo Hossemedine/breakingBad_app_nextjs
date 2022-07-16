@@ -50,7 +50,7 @@ const NavBar = () => {
                       <Link href="/charachters/"><a>Characters</a></Link>
                     </li>
                     <li>
-                      <a>Episodes</a>
+                      <Link href="/episodes"><a>Episodes</a></Link>
                     </li>
                     <li>
                       <a>Quotes</a>

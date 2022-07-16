@@ -9,8 +9,16 @@
 
 
 .layout{
- position: absolute;
+ 
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+
  padding-top: 8rem;
+}
+
+.layout--content{
+  margin-bottom: 6rem;
 }
 
 /*============================================== 
@@ -240,11 +248,11 @@ Header
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 30px 0;
+  padding: 2px 0;
   margin-top: 60px;
   color: #777;
   border-top: 1px solid #eaeaea;
-  position: static;
+  position: absolute;
   width: 100%;
   bottom: 0;
   font-size: 10px;

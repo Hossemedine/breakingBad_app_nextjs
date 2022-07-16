@@ -1,14 +1,43 @@
 import { getInitialProps } from 'next/dist/shared/lib/utils'
-import React from 'react'
+import React ,{useState} from 'react'
+import ReactPaginate from 'react-paginate';
 import Cards from '../../components/cards'
+import Styles from '../../styles/pagination.module.css'
 
 
 function Charachters( {data}) {
+  const [currentpage,setcurrentpage]=useState(1);
+   
+   const itemPerPAge=5;
+   const totalPages=Math.ceil(data.length/itemPerPAge);
+   const indexOfLastItem=currentpage*itemPerPAge;
+   const indexOfFirstItem=indexOfLastItem-itemPerPAge;
+ 
+
+  const dataToshow=data.slice(indexOfFirstItem,indexOfLastItem)
   
- console.log('index.js: ',data)
+
+  const hundelPageChange=(event)=>{
+    setcurrentpage(event.selected+1)
+   console.log(event.selected)
+ }
+
   return (
     <>
-    <Cards char={data}/>
+    <Cards char={dataToshow} key={dataToshow.char_id}/>
+    <ReactPaginate
+            pageCount={totalPages}
+            pageRangeDisplayed={3}
+            marginPagesDisplayed={1}
+            nextLabel={'next'}
+            previousLabel={'prev'}
+            onPageChange={hundelPageChange}
+            containerClassName={Styles.pagination_wrapper}
+            pageClassName={Styles.page}
+            activeClassName={Styles.active}
+            previousClassName={Styles.previous}
+            nextClassName={Styles.next}
+         />
       
     </>
   )
