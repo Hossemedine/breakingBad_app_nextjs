@@ -20,7 +20,7 @@ export default function Home() {
                 className='image' 
                 width={750}
                 height={850}
-                src="/../public/1.jpg" alt="" />
+                src="/1.jpg" alt="image" />
                 <div className="info--text">
                     <h1>Breaking<span>Bad</span></h1>
                     <p><span>16</span> Emmys awward</p>
@@ -37,7 +37,7 @@ export default function Home() {
                 width={750}
                 height={850}
                 controls={true}
-                src="/../public/2.jpg" alt=""  />
+                src="/2.jpg" alt="image"  />
                 </div>
                
                <Video/>
